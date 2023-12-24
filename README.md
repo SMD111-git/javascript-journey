@@ -1,2 +1,4 @@
 # javascript-journey
-in this path we start form very basic like what is a variable and types of idenftivers and datatypes
+In this journey Titan up your seat belts and we have have a series of js drifts , we will know the basic stuff such as variables , datatypes  
+
+
