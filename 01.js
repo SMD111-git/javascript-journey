@@ -1,10 +1,12 @@
 var c ="lolp";
 var u =56;
+console.log(c)
 {
   var c="this";
   console.log(c)
 }
 console.log(c)
+console.log(u)
 
 //let
 let b="harry";
