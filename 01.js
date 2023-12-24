@@ -11,6 +11,8 @@ console.log(u)
 //let
 let b="harry";
 let y=908;
+console.log(y)
+console.log(b)
 {
   let y="pop";
   console.log(y)
