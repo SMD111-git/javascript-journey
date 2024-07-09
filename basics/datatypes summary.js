@@ -29,3 +29,6 @@ console.log(myobj);
 const myfunction =function(){
     console.log("helloworld");
 }
+//****************************************************************************
+//stack(primivite),heap(non-primivite)
+    
