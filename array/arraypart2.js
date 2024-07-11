@@ -17,13 +17,22 @@ const real_another_array = another_array.flat(Infinity)
 //console.log(real_another_array);
 
 // for each loop
-let sum=0;
+/*let sum=0;
 const a=[1,2,3]//syntrax "array.forEach(function(currentValue, index, arr), thisValue)"
 a.forEach(myfunction);
 function myfunction(a){
     sum+=a;
 }
-console.log(sum)
+console.log(sum)*/
+console.log(Array.isArray("Hitesh"))
+console.log(Array.from("Hitesh"))
+console.log(Array.from({name: "hitesh"})) // interesting
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3));
 
 
 
