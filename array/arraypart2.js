@@ -13,7 +13,7 @@ const allarr=[...arr,...arr1]
 
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 
-const real_another_array = another_array.flat(Infinity)
+const real_another_array = another_array.flat(Infinity)//this flat the array where the above array is have array inside array by flat fun we amke it single array.
 //console.log(real_another_array);
 
 // for each loop
