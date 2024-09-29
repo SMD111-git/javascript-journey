@@ -1,4 +1,4 @@
-/*let mydate = new Date();//Date(it is a datatype)
+let mydate = new Date();//Date(it is a datatype)
 console.log(mydate.toString());//output:Wed Jul 10 2024 10:17:22 GMT+0000
 console.log(mydate.toDateString());//output:Wed Jul 10 2024
 console.log(mydate.toLocaleDateString()); // output: 7/10/2024
