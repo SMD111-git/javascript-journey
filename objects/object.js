@@ -7,3 +7,4 @@ console.log(jsuser.out)
 console.log(jsuser["out"])//this another method of acessing the value from object
 //to add the key:value to object
 jsuser.location="mumbai";
+console.log(jsuser);
