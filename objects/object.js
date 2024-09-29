@@ -10,3 +10,5 @@ jsuser.location="mumbai";
 console.log(jsuser);
 //if the key is in string format then to acess that 
 console.log(jsuser["islogged"]);
+//to declear a symbol
+const mysym=Symbol("key1");
