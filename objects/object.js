@@ -12,3 +12,5 @@ console.log(jsuser);
 console.log(jsuser["islogged"]);
 //to declear a symbol
 const mysym=Symbol("key1");
+const jsuser={name:"SMD",age:"18","islogged":"true",out:"24/7",[mysym]:"mykey1"}
+console.log(jsuser);
