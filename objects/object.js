@@ -10,7 +10,7 @@ jsuser.location="mumbai";
 console.log(jsuser);
 //if the key is in string format then to acess that 
 console.log(jsuser["islogged"]);
-//to declear a symbol
+//to declear a symbol and add to the object.
 const mysym=Symbol("key1");
 const isuser={name:"SMD",age:"18","islogged":"true",out:"24/7",[mysym]:"mykey1"}
 console.log(isuser);
