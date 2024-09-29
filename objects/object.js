@@ -14,3 +14,8 @@ console.log(jsuser["islogged"]);
 const mysym=Symbol("key1");
 const isuser={name:"SMD",age:"18","islogged":"true",out:"24/7",[mysym]:"mykey1"}
 console.log(isuser);
+
+jsuser.email="m@gmail.com"
+Object.freeze(jsuser)
+jsuser.email="m@mail.com"
+console.log(jsuser);
