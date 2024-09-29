@@ -17,5 +17,7 @@ console.log(isuser);
 
 jsuser.email="m@gmail.com"
 Object.freeze(jsuser)
+// if Object.freeze(JsUser) is uncommented, it would prevent any modifications to the object, making the subsequent email assignment ineffective.
 jsuser.email="m@mail.com"
 console.log(jsuser);
+//as we there no change in the email as "freeze" it prevnted the change
