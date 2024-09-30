@@ -10,3 +10,7 @@ console.log(cousreinstructer)
 //other method 
 const {cousrename:nls} = course
 console.log(nls);//over here we just exract and keep it in one varaible use varaible to call it
+//so above onwas destructing
+//next apis
+
+
