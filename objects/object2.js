@@ -29,7 +29,7 @@ console.log(obj3);
 //other method to merge
 const obj5={...obj1,...obj2}
 console.log(obj5);
-// this a nested objects case :
+// this is case of array with objects:
 const users=[
      {
         id:1,
@@ -44,7 +44,10 @@ const users=[
         email:"k@gmail.com"
      }
 ]
-console.log(users[2].email);
+console.log(users[2].email);//to acess a array of object we give the array[],and then required key to get the value of the object
 console.log(tinderuser);
 console.log(Object.values(tinderuser));//it giving olny the values of the object.
-console.log(Object.entries(tinderuser));//it gives the [ [ 'id', '123aa' ], [ 'name', 'snd' ] ]
+console.log(Object.entries(tinderuser));//it gives the [ [ 'id', '123aa' ], [ 'name', 'snd' ] ] it output will array inside array
+console.log(Object.keys(tinderuser));//the output will in format of array
+//so this a method to check if the object is having that key inside it or not it give in boolean values.
+console.log(tinderuser.hasOwnProperty('name'));
