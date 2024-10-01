@@ -19,3 +19,17 @@ function loginusermsg(username="smd"){
     return `${username} just logged in`
 }
 console.log(loginusermsg("SMD"));
+
+//in above thing the code is all about the passing the parameter and get the output if we donot pass anything into the parameter then it assume as sam and print the statment and it will never go in the if block of code
+//other wise if we donot pass anby value
+function loginusermessage(usermae){
+    if(usermae===undefined){
+        console.log("plese enter the value");
+        return
+    }
+    return `${usermae} jsut looged in`
+}
+console.log(loginusermessage());
+
+
+//     //
