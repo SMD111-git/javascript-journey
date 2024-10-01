@@ -1,7 +1,5 @@
-function add(num1,num2){
-    let result=num1+num2;
-    return  result;
-    //return result;
+//function
+function addtwonumbers(num1,num2){
+    return num1+num2;
 }
-console.log("enter the value of:",num1,num2)
-console.log(add)
+console.log(addtwonumbers(3,2));
