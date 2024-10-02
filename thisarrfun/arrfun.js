@@ -49,3 +49,7 @@ console.log(add(2,3));
 const two=(num1,num2)=>({username:"MD"})
 console.log(two())
 //output is { username: 'MD' }
+
+
+
+/*invoked function*/
