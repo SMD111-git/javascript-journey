@@ -68,3 +68,10 @@ console.log(two())
 	console.log(localVar); // Output: This is a local variable
 })();
 //due some issues the invoked is not working getting invoked the conspect it the a function within (whole function within this )and called by ()
+var result = (function() {
+	var x = 10;
+	var y = 20;
+	return x + y;
+})();
+
+console.log(result); // Output: 30
