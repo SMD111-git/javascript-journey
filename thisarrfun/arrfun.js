@@ -53,3 +53,18 @@ console.log(two())
 
 
 /*invoked function*/
+/*(function chai(){
+    console.log("DB")
+})();*/
+//
+
+/*( (name) => {
+    console.log(`DB CONNECTED TWO ${name}`);
+} )('hitesh')*/
+
+(function() {
+	// IIFE code block
+	var localVar = 'This is a local variable';
+	console.log(localVar); // Output: This is a local variable
+})();
+//due some issues the invoked is not working getting invoked the conspect it the a function within (whole function within this )and called by ()
