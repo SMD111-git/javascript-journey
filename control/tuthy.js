@@ -15,3 +15,7 @@ var1=undefined ?? 15
 //this a operator is used in db if the value is assinged null then is null or instead of 10it will a function to stafity the program get it particular value to the program
 //after the function get the value into the program then it assinged to it
 console.log(val1)
+// terniary operator
+//condition ? true:false
+const iceteaprice=100
+iceteaprice>=80 ? console.log("less then 80") :console.log("more then 80")
