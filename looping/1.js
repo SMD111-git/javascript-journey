@@ -13,4 +13,3 @@ const arr=[1,2,3,4,5]
  map.set("usa","LA")
  map.set("Tk","istanbul")
  console.log(map);//output:Map(3) { 'In' => 'india', 'usa' => 'LA', 'Tk' => 'istanbul' }
- 
