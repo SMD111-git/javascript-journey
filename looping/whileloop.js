@@ -23,3 +23,11 @@ the value of array  is:wosum
 the value of array  is:bat,super,asw,wosum
 the value of array  is:bat,super,asw,wosum
 the value of array  is:bat,super,asw,wosum*/
+
+//do while loop
+let score =1;
+
+do {
+    console.log('score is ${score}')
+    score++
+} while (score<=10);
