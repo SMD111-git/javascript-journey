@@ -25,9 +25,10 @@ the value of array  is:bat,super,asw,wosum
 the value of array  is:bat,super,asw,wosum*/
 
 //do while loop
-let score =1;
+let score =1;// give it as 11
 
 do {
     console.log('score is ${score}')
     score++
-} while (score<=10);
+} while (score<=10);//over here the excution or statment will be printed first and then moves to the condition part 
+//after checking the condition if it staify the condition then it goes to excution part and goes on but if not then the loop will be stoped after thing the condition
