@@ -13,7 +13,9 @@
  * title.style.backgroundcolor='green'
  * title.style.padding='15px'
  * ****adding the content to  site**********
- * title.innerHTML
- * title.textcontent
- * title.innertext
+ * const title=document.getElementBy('title')
+ * title.innertext //this displlay the content which are in display mode ready
+ * title.textcontent but here the content is showen which is hidden allso
+ * title.innerHTML this give whole tags and values.
+ * 
  */
