@@ -17,5 +17,7 @@
  * title.innertext //this displlay the content which are in display mode ready
  * title.textcontent but here the content is showen which is hidden allso
  * title.innerHTML this give whole tags and values.
- * 
+ * document.getElementsByClassName('heading') so over here we get the values of  that articualr classes
+ * documment.querySelector('h1')
+ 
  */
