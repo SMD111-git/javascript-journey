@@ -9,5 +9,11 @@
  * document.getElementById('title').setAttribute('class','test') this set or replaces the existing attribute value to the vaue which we are setting the value of that attribute.
  * and the note is that we need pass in parameters as (attriute,value). 
  * eg:document.getElementById('title').setAttribute('class','SMD')
- * 
+ * const title=document.getElementById('title')
+ * title.style.backgroundcolor='green'
+ * title.style.padding='15px'
+ * ****adding the content to  site**********
+ * title.innerHTML
+ * title.textcontent
+ * title.innertext
  */
