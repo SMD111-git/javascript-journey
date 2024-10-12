@@ -1,5 +1,5 @@
 //the ponts to note down and dom(doucment object manupalation)
-/**doucment.getElementById('title')
+/**document.getElementById('title')
  * the method get you  attriube by the id and gives you the whole tag values.
  * document.getElementById("title").id   this gives you the value  of that tag:title,it is a way to  acess the attributes of that tag.
  * document.getElementById("title").className  silmiar here we are acess the value of that tag by  giving specifi attriube need to be displayed.
@@ -41,4 +41,9 @@
  * mylist.forEach(function(l){
  * l.style.color="red"
  * })
+ * document.getElementsByClassName('listitem') by thhis dom we can get the elements by the class names.
+ * as the above one is a listnode we can not perfrom the array operation on it so we can convert it into the from of array from nodelist
+ * const templist=document.getElementsByClassName('listitem') 
+ * Array.from(templist)
+ * 
  */
