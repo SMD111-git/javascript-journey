@@ -45,5 +45,8 @@
  * as the above one is a listnode we can not perfrom the array operation on it so we can convert it into the from of array from nodelist
  * const templist=document.getElementsByClassName('listitem') 
  * Array.from(templist)
- * 
+ * const convertarray= Array.from(templist)
+ * convertarray.foreach(function(li){
+ * li.style.color='orange'
+ * })
  */
