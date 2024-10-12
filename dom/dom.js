@@ -19,5 +19,5 @@
  * title.innerHTML this give whole tags and values.
  * document.getElementsByClassName('heading') so over here we get the values of  that articualr classes
  * documment.querySelector('h1')
- 
+ * 
  */
