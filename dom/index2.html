@@ -21,6 +21,72 @@
         console.log(mypat.children);
         console.log(mypat.children[2].innerHTML);
 
+
+        for (let index = 0; index < mypat.children.length; index++) {
+            console.log(mypat.children[index].innerHTML);
+            
+        }
+    mypat.children[1].style.color="yellow"
+    console.log(mypat.firstElementChild);//to get the frist eleementchlid
+    console.log(mypat.lastElementChild);
+    //from chlid to parent
+    const dayone=document.querySelector(".day")
+    console.log(dayone);
+
+    console.log(dayone.parentElement)
+    console.log(dayone.nextElementSibling);
+       
+    console.log("nodes:",mypat.childNodes);//this parent nodelist  this gives you whole tree srtucture from the bottom to top with all spaces and tags and ids whatever there in the following parent 
+    /*this output of the above
+    
+NodeList(13) [text, div.day, text, div.day, text, div.day, text, div.day, text, div.day, text, div.day, text]
+0
+: 
+text
+1
+: 
+div.day
+2
+: 
+text
+3
+: 
+div.day
+4
+: 
+text
+5
+: 
+div.day
+6
+: 
+text
+7
+: 
+div.day
+8
+: 
+text
+9
+: 
+div.day
+10
+: 
+text
+11
+: 
+div.day
+12
+: 
+text
+length
+: 
+13
+[[Prototype]]
+: 
+NodeList*/
+    
+
     </script>
     
 </body>
