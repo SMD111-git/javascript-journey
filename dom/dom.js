@@ -32,5 +32,13 @@
  * myli.style.padding="10px"
  * myli.innerHTML="five"
  * myli.innerText="five"
- * 
+ * to select the  all query at a tiome we can use queryAllSelector
+ * const mylist=document.querySelectorAll('li')
+ * mylist[0].style.color='green' this makes changes in the very firstr element of list.
+ * const myh1=document.querySelectorAll('h1')
+ * myh1[0].style.color="green"
+ * using of the foreach in this 
+ * mylist.forEach(function(l){
+ * l.style.color="red"
+ * })
  */
