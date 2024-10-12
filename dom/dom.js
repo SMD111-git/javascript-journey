@@ -18,6 +18,19 @@
  * title.textcontent but here the content is showen which is hidden allso
  * title.innerHTML this give whole tags and values.
  * document.getElementsByClassName('heading') so over here we get the values of  that articualr classes
- * documment.querySelector('h1')
+ * documment.querySelector('h1') in this we can select it by the query or css selecters directly 
+ * document.querySelector('#title') this for css query to be selected 
+ * document.querySelector('.heading')for class
+ * document.querySelector('input[type="password"]')
+ * document.querySelector('h2:first-child') we can selecte any thing for the css selectors format
+ * for instan we can di this varaibles also
+ * const myul=document.querySelector('ul') as we see the ul is stored in myul now we can acess the thing with myul to get other queys inside the ul tag eg this is li tags inside it .
+ * myul.querySelector('li') 
+ * again to do any changes in the the li tag we can use a varaible and make the changes
+ * const myli=document.querySelector('li')
+ * myli.style.backgroundColor="green"
+ * myli.style.padding="10px"
+ * myli.innerHTML="five"
+ * myli.innerText="five"
  * 
  */
