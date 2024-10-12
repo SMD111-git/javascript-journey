@@ -49,4 +49,13 @@
  * convertarray.foreach(function(li){
  * li.style.color='orange'
  * })
+ * 
+ * const myh2=document.querySelectorAll('h2')
+ * myh2.forEach(function(p) {
+    p.style.color='green';
+    p.style.backgroundColor='yellow';
+    p.style.padding="10px";
+    p.innerHTML="kfjdvfjvedu"
+})
+
  */
