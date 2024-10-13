@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAI AUR CODE</title>
+</head>
+<body style="background-color: black;color: blue;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langname) {
+        //this is argument which act as a variable, wtever the value is passed into tthe function
+        //to create a add
+        const li=document.createElement('li');
+        li.innerHTML=`${langname}`//here as we see the argument
+        //to display or attch to docment
+        document.querySelector('.language').appendChild(li)//this add to the langauge as we see that first we selected the tag and then appended the content in to it
+
+    }
+    addlanguage("python")
+    addlanguage("typescript")
+    
+
+</script>
+</html>
