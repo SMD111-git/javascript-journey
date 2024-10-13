@@ -30,6 +30,10 @@
     //the setAttribute directly get placed into the tag .
     const addtext=document.createTextNode("chai aur code")//this is another way to adding text to div
     div.appendChild(addtext)
-    
+
+
+    //attching to the document
+    document.body.appendChild(div)//the point to note is that as div is chlid of body , so we append the div as child to the body, so div is  the child of body
+        
 </script>
 </html>
