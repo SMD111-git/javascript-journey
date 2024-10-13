@@ -11,6 +11,7 @@
 #project1
 
 ```javascript
-console.log('javascript ')
+document.queryAllSelector('button')
+
 
 ```
