@@ -20,12 +20,16 @@
     const h1=document.createElement('h1')
     console.log(h1);
     h1.className="heading"
-    //h1.innerText="chaaiii"
+    //h1.innerText="chaaiii" is  also nice path to add the content to the div or tag
     
     //coustem attriubtes
-    div.setAttribute("title","titlegenertaed")
+    div.setAttribute("title","titlegenertaed")// need to now more abt this
     div.style.backgroundColor="blue"    
     div.style.padding="12px"
+    //to add content into the div.. rather then using innertext or html. the point to note is that this over wirte 
+    //the setAttribute directly get placed into the tag .
+    const addtext=document.createTextNode("chai aur code")//this is another way to adding text to div
+    div.appendChild(addtext)
     
 </script>
 </html>
