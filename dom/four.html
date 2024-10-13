@@ -11,6 +11,7 @@
     </ul>
 </body>
 <script>
+    //this we are travesing thougher whole tree 
     function addlanguage(langname) {
         //this is argument which act as a variable, wtever the value is passed into tthe function
         //to create a add
@@ -22,10 +23,34 @@
     }
     addlanguage("python")
     addlanguage("typescript")
-    function addOptimus(params) {
-        
+    //other way to  add the content into ythe the body //here we are derticly  go to the bpoint by creating and doing the things
+    function addOptimus(langname) {
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
         
     }
+    addOptimus("golang")
+    addOptimus('java')
+
+    //this  a method of editing a doucment
+    const secondlang=document.querySelector("li:nth-child(2)")
+    secondlang.innerHTML="mojo"
+    //other approch to this editing thing
+    const newli=document.createElement('li')
+    newli.textContent="rust"
+    secondlang.replaceWith(newli) //by using the variable 
+
+    //editing
+    const second=document.querySelector("li:first-child")
+    second.outerHTML='<li>SMD</li>'
+
+    //remove
+    const lastlang=document.querySelector("li:last-child")
+    lastlang.remove()
+
+    
+
 
 </script>
 </html>
