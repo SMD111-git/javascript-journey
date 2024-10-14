@@ -8,7 +8,7 @@
 #solution for projects and codes
 
 
-#project1
+project1
 
 ```javascript
 
@@ -37,7 +37,7 @@ buttons.forEach(function (button) {
 
 ```
 
-#project2
+project2
 ```javascript
 
 
