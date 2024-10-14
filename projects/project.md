@@ -33,7 +33,7 @@ buttons.forEach(function (button) {
     }
   });
 });
-
+/*futher the  be update of other approchs*/
 
 ```
 
