@@ -72,3 +72,13 @@ setInterval(function () {
   clock.innerHTML = date.toLocaleTimeString();
 }, 1000);
 ```
+project4
+```
+javascript
+//this to get the random nuber in intgere format
+//console.log(parseInt(Math.random()*10+1));
+const random = parseInt(Math.random() * 100 + 1);
+const sbt = document.querySelector('#subt');
+const userinput = document.querySelector('#guessFiled');
+
+```
