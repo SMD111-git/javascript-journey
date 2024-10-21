@@ -73,8 +73,7 @@ setInterval(function () {
 }, 1000);
 ```
 project4
-```
-javascript
+```javascript
 //this to get the random nuber in intgere format
 //console.log(parseInt(Math.random()*10+1));
 const random = parseInt(Math.random() * 100 + 1);
