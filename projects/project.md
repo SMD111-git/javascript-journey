@@ -79,5 +79,37 @@ project4
 const random = parseInt(Math.random() * 100 + 1);
 const sbt = document.querySelector('#subt');
 const userinput = document.querySelector('#guessFiled');
+const guessSlot = document.querySelector('.guesses');
+const remaining = document.querySelector('.lastResult');
+//this show the value is low or high
+const loworhi = document.querySelector('.loworhi');
+const startover = document.querySelector('.resultparas'); //this give the display to user what is the pervious number and guessing if the numbers are done then it must restart.
 
+const p = document.createElement('p');
+let prevguess = []; //by this we can show the user's has guessed the and showcase it as the array.and donot repeat the same number
+let numGuess = 1;
+//to number  of attempts the user has done.
+let playgame = true; //
+
+function valideGuess(guess) {
+  //this check did guess number is a vaild number in the given conditon .
+}
+
+function checkGuess(guess) {
+  //this gives the msg that the given number is valid.
+}
+
+function displayGuess(guess) {
+  //this interact with dom and empty the user input ,inner html guess is added and the ,reduse the number of guesses//this also display no of guesses you have done 
+}
+
+function display(mesaage) {
+  //the shows the display
+}
+function newgame(){
+
+}
+function endgame(){
+  
+}
 ```
