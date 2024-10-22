@@ -90,6 +90,11 @@ let prevguess = []; //by this we can show the user's has guessed the and showcas
 let numGuess = 1;
 //to number  of attempts the user has done.
 let playgame = true; //
+if (playgame) {
+  submit.addEventListener('click', function (e) {
+    e.preventDefalut();
+  });
+}
 
 function valideGuess(guess) {
   //this check did guess number is a vaild number in the given conditon .
@@ -100,16 +105,14 @@ function checkGuess(guess) {
 }
 
 function displayGuess(guess) {
-  //this interact with dom and empty the user input ,inner html guess is added and the ,reduse the number of guesses//this also display no of guesses you have done 
+  //this interact with dom and empty the user input ,inner html guess is added and the ,reduse the number of guesses//this also display no of guesses you have done
 }
 
 function display(mesaage) {
   //the shows the display
 }
-function newgame(){
+function newgame() {}
+function endgame() {}
 
-}
-function endgame(){
-  
-}
+
 ```
