@@ -43,11 +43,12 @@
         console.log("clicked on japan")
     },true)
     //over here we stop progaration bcz all element which have a under the propagation as we see in 1  and u also mentiod that on element in that specificaly in other case then propagation will stop for that one element 
-    //rather then going and capture it will olny show  you that one element
+    //rather then going and capture or bubbleing  it will olny show  you that one element event 
     document.getElementById('japan').addEventListener('click',function(e){
         console.log("clicked on japan")
         e.stopPropagation()
     },false)
+
 </script>
 
 </html>
