@@ -51,11 +51,13 @@
     document.getElementById('google').addEventListener('click',function(e){
         console.log("clicked on japan")
         e.stopPropagation()
-        e.preventDefault();prevent the page from refreshing, allowing you to handle and process the form without causing the entire page to reload.
+        e.preventDefault();//prevent the page from refreshing, allowing you to handle and process the form without causing the entire page to reload.
     },false)
-    document.querySelector('#image'){
-        
-    }
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode)//over here we are targeting the the imgs and the li tags 
+        let removeit=e.target.parentNode
+        removeit.remove()//now as we see that it tragets n the images(target) and then to li tags(parentnode) and remove 
+    })
 
 </script>
 
