@@ -38,11 +38,15 @@
     //in the place of false if i place with true the the progaation event becomes as a capturing(top to bottom) 
     document.getElementById('images').addEventListener('click',function(){
         console.log("clicked on the ul")
-    },true)
+    },true)//1
     document.getElementById('japan').addEventListener('click',function(){
         console.log("clicked on japan")
     },true)
-
+    //over here we stop progaration bcz all element which have a under the propagation as we see in 1  and u also mentiod that on element in that specificaly in other case then propagation will stop for that one element 
+    //rather then going and capture it will olny show  you that one element
+    document.getElementById('japan').addEventListener('click',function(e){
+        e.stopPropagation()
+    },false)
 </script>
 
 </html>
