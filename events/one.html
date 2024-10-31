@@ -46,8 +46,9 @@
     //rather then going and capture or bubbleing  it will olny show  you that one element event 
     document.getElementById('japan').addEventListener('click',function(e){
         console.log("clicked on japan")
-        e.stopPropagation()
+        e.stopPropagation()//it show olny the paritucalr tag event at that time rather then showing the capture or bubbleing
     },false)
+    
 
 </script>
 
