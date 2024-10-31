@@ -48,7 +48,11 @@
         console.log("clicked on japan")
         e.stopPropagation()//it show olny the paritucalr tag event at that time rather then showing the capture or bubbleing
     },false)
-    
+    document.getElementById('google').addEventListener('click',function(e){
+        console.log("clicked on japan")
+        e.stopPropagation()
+        e.preventDefault();prevent the page from refreshing, allowing you to handle and process the form without causing the entire page to reload.
+    },false)
 
 </script>
 
