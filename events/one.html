@@ -29,7 +29,7 @@
 
     //attachevent
     //jquery
-    document.getElementById('images').addEventListener('click',function(){
+   /* document.getElementById('images').addEventListener('click',function(){
         console.log("clicked on the ul")
     },false)//it is applied on all of the images of html under the id of image.
     document.getElementById('japan').addEventListener('click',function(){
@@ -52,7 +52,7 @@
         console.log("clicked on japan")
         e.stopPropagation()
         e.preventDefault();//prevent the page from refreshing, allowing you to handle and process the form without causing the entire page to reload.
-    },false)
+    },false)*/
     /*document.querySelector('#images').addEventListener('click',function(e){
         console.log(e.target.parentNode)//over here we are targeting the the imgs and the li tags 
         let removeit=e.target.parentNode
@@ -61,13 +61,14 @@
         
     })*/
     document.querySelector('#images').addEventListener('click',function(e){
-        console.log(e.target.tagName);//this a method to get the tagname from html document and check the tag.
-        if (e.target.tagName==='IMG') {
-            console.log(e.target.id);
+        console.log(e.target.tagName);//this a method to get the tagname from html document and get the tag.
+        if (e.target.tagName==='IMG') { //checking the tagname is equal to img tag
+            console.log(e.target.id);//printing the id(value) of the img tag
             let removeit=e.target.parentNode
             removeit.remove()
         }
         //in this event we will  get  to delete or remove olny the img tag by checking the condition . 
+        //in this we olny delete the tag of img rather deleting whole ul tag 
     })
 
 </script>
