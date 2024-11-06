@@ -22,7 +22,14 @@
     const textchange=function(){
         document.querySelector('h1').innerHTML="best js series"
     }
-    setTimeout(textchange,2000)
+    const changer=setTimeout(textchange,2000)
+
+    //to stop thrre settimeout events
+    document.querySelector('#stop').addEventListener('click',function () {
+        clearTimeout(changer)
+        console.log('stopped')
+        
+    })
 
 </script>
 </html>
