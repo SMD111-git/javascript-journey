@@ -11,11 +11,12 @@
    <button id="start">start</button>
 </body>
 <script>
-    const say=function(){
-        console.log("SMD",Date.now());
+    const say=function(str){
+        console.log(str,Date.now());
         
     }
-    setInterval(say,1000)
+    const intervalid=setInterval(say,1000) //we can pass the thrid argument and just repalce it with the varaibles in function
+    clearInterval(intervalid)
 
 </script>
 </html>
