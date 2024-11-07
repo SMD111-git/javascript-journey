@@ -5,22 +5,50 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: black;color:white">
    <h1>chai aur javascript</h1> 
    <button id="stop">stop</button>
    <button id="start">start</button>
 </body>
 <script>
     /*assigment*/
-    const say=function(str){
+    /*const say=function(str){
         console.log(str,Date.now());//set a delay for functions that are executed again and again, such as animations
         //It's particularly useful when you need to run a task continuously or periodically without blocking other operations
     }
     const intervalid=setInterval(say,1000,"hi") //we can pass the thrid argument and just repalce it with the varaibles in function
     clearInterval(intervalid) 
     //the task is to mmake the buttons to work as start ands stop.
+    //start
+    document.querySelector("#start").addEventListener('click',function(){
+        
+    })
+    */
+   let intervalid=null;//to store the reffernces to the setinterval
+   const say=(message)=>{
+    console.log(message,Date.now());
     
-    
+   }
+   const toggle=(isstarted)=>{
+    document.querySelector("#start").disabled=isstarted
+    document.querySelector("#stop").disabled=!isstarted
+   }
+   document.querySelector("#start").addEventListener('click',function(){
+    if(!intervalid){ //check here that the intervalid must not me in running state or not statred
+        intervalid=setInterval(say,100,"hi")
+        toggle(true)
+        console.log()
+    }
+   });
+   
+   //stop
+   document.querySelector("#stop").addEventListener('click', function(){
+    if(intervalid){//here it checking that the intervalid is in running modee or processing state
+    clearInterval(intervalid)
+    intervalid=null
+    toggle(false)
+    }
+   })
 
 </script>
 </html>
