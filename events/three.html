@@ -11,12 +11,16 @@
    <button id="start">start</button>
 </body>
 <script>
+    /*assigment*/
     const say=function(str){
-        console.log(str,Date.now());
-        
+        console.log(str,Date.now());//set a delay for functions that are executed again and again, such as animations
+        //It's particularly useful when you need to run a task continuously or periodically without blocking other operations
     }
     const intervalid=setInterval(say,1000,"hi") //we can pass the thrid argument and just repalce it with the varaibles in function
-    clearInterval(intervalid)   
+    clearInterval(intervalid) 
+    //the task is to mmake the buttons to work as start ands stop.
+    
+    
 
 </script>
 </html>
