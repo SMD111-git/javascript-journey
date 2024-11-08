@@ -271,7 +271,7 @@ function newGame() {
 
 
 ```
-project 5
+project 6
 ```javascript 
 //generate a random color
 const randomcolor = function () {
