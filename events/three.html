@@ -34,7 +34,7 @@
     document.querySelector("#stop").disabled=!isstarted
    }
    document.querySelector("#start").addEventListener('click',function(){
-    if(!intervalid){ //check here that the intervalid must not me in running state or not statred
+    if(!intervalid){ //check here that the intervalid must not me in running state or not statred to check empty
         intervalid=setInterval(say,100,"hi")
         toggle(true)
         console.log()
@@ -45,7 +45,7 @@
    document.querySelector("#stop").addEventListener('click', function(){
     if(intervalid){//here it checking that the intervalid is in running modee or processing state
     clearInterval(intervalid)
-    intervalid=null
+    intervalid=null//this is to give the reffernces to intervalid
     toggle(false)
     }
    })
