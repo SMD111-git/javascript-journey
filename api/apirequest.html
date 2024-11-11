@@ -22,9 +22,13 @@
         console.log(xhr.readyState)
         //now this function will give you a contiunes state of track from beingging to last state
         //in console of borswer
+        if (xhr.readyState===4) {
+            console.log(this.responseText)
+        }
     }
     
     xhr.send()
+
 
 </script>
 </html>
