@@ -23,7 +23,13 @@
         //now this function will give you a contiunes state of track from beingging to last state
         //in console of borswer
         if (xhr.readyState===4) {
-            console.log(this.responseText)
+            //const data=this.responseText//the responetext is a keyword the give whole api or model deatils
+            //and this is used a the current check
+            //console.log(typeof data)//to acces the attriube from the api we need to converte the string into object then
+            //we can access .
+            const data=JSON.parse(this.responseText)
+            console.log(typeof  data)
+            console.log(data.followers)
         }
     }
     
