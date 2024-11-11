@@ -17,7 +17,13 @@
     const requesturl='https://api.github.com/users/SMD111-git'
     const xhr=new XMLHttpRequest()
     xhr.open('GET',requesturl)//method (eg:'get,post,put'(methods),string)
-    console.log(xhr.readyState)
+    //now to track the state of program or api contiunesly we need to to undergo
+    xhr.onreadystatechange=function(){
+        console.log(xhr.readyState)
+        //now this function will give you a contiunes state of track from beingging to last state
+        //in console of borswer
+    }
+    
     xhr.send()
 
 </script>
