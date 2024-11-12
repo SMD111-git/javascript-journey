@@ -32,6 +32,21 @@ const promisethree = new Promise(function(resolve, reject){ //this a arrow funct
 })
 promisethree.then(function(user){//all the values are returned here and to return the values we need to connect the functions
     //with the help of reslove eg we use then as it related to resolve, now to get the values need to pass the object or value in the parameter of function
-    console.log(user);
+    console.log(user);//here we get the values 
     
 })
+
+const promisefour = new Promise(function(resolve, reject)  {
+    setTimeout(function(){
+        let error=true
+        //suppouse if we try to acess the file or networkrequest.
+        if (!error) {
+            resolve({username:"SMD",passowrd:"123"})
+        }
+        else{
+            reject('ERROR:something went wrong')
+        }
+        
+    },1000)
+})
+promisefour.then().catch() //here in then()we give the values , with catch()we get the value.
