@@ -24,3 +24,14 @@ new Promise((resolve, reject) => {
     console.log("async 2 resolved ");
     
 })
+
+const promisethree = new Promise(function(resolve, reject){ //this a arrow function
+    setTimeout(() => {
+      resolve({username:'chai',email:"chai@example.com"})//passing data in the from  of objects  
+    },1000);
+})
+promisethree.then(function(user){//all the values are returned here and to return the values we need to connect the functions
+    //with the help of reslove eg we use then as it related to resolve, now to get the values need to pass the object or value in the parameter of function
+    console.log(user);
+    
+})
