@@ -13,3 +13,14 @@ promiseone.then(function(){ //over here the then() is directly  realted to the r
     //show this statment
     
 })
+
+//other method
+new Promise((resolve, reject) => {
+    setTimeout(function () {
+        console.log("async task 2");
+        resolve()
+    },1000)
+}).then(function () {
+    console.log("async 2 resolved ");
+    
+})
