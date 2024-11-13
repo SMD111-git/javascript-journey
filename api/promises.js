@@ -1,4 +1,13 @@
 //creation of promises
+/*Promises are used to handle asynchronous operations in a more readable, manageable way.
+They provide a mechanism for chaining multiple asynchronous operations.
+Promises also offer a way to handle success or failure (resolve/reject) more effectively than using traditional callback functions.
+It provides a cleaner and more structured way to handle asynchronous operations like API calls, file reading, or timeouts compared to older methods like callbacks.
+
+Key Concepts of Promises:
+Pending: The Promise is still being executed.
+Resolved (Fulfilled): The Promise has completed successfully, and you have access to the result.
+Rejected: The Promise has failed, and you can handle the error.*/
 const promiseone = new Promise(function (resolve,reject) {
     //DB calls,network
     //do an async task
@@ -93,3 +102,5 @@ async function consumerpromisefive(){
     }
 }
 consumerpromisefive()
+
+
