@@ -40,7 +40,8 @@ const promisefour = new Promise(function(resolve, reject)  {
     setTimeout(function(){
         let error=false //or give the value as ""true""" to check the output
         //suppouse if we try to acess the file or networkrequest.
-        if (!error) {
+        if (!error) { //!isLoggedIn means "not isLoggedIn." Since isLoggedIn is false, !isLoggedIn will be true, so the if block will execute, printing "User is not logged in."
+            //If isLoggedIn were true, then !isLoggedIn would be false, and the else block would execute instead.
             resolve({username:"SMD",passowrd:"123"})
         }
         else{
@@ -58,5 +59,6 @@ promisefour.then((user)=>{
     // then this then() we get and return it 
     
 }).catch(function(error){
-    console.log(error)
-}) //here in then()we give the values , with catch()we get the value.
+    console.log(error) //here in then()we give the values , with catch()we get the value.
+
+}).finally(())//that the code inside finally will always execute, regardless of whether the Promise was successful or failed.
