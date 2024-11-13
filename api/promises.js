@@ -81,5 +81,15 @@ async function consumerpromisefive(){
     //An async function always returns a Promise.
     //Inside an async function, you can use the await keyword to wait for a Promise to resolve before proceeding to the next line of code.
     //fetchData as async: By adding async before function, JavaScript knows that fetchData will contain asynchronous code.
-    
+    //in this it waits for a certain time and then the code is excuted and there is no need to use catch() function
+    try
+    {
+        const response=await promisefive
+        console.log(response)
+    }
+    catch(error){
+        console.log(error);
+        
+    }
 }
+consumerpromisefive()
