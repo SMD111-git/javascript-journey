@@ -49,4 +49,13 @@ const promisefour = new Promise(function(resolve, reject)  {
         
     },1000)
 })
-promisefour.then().catch() //here in then()we give the values , with catch()we get the value.
+promisefour.then((user)=>{
+    console.log(user);
+    return user.username
+    
+}).then(function(username){
+    console.log(username);
+    
+}).catch(function(error){
+    console.log(error)
+}) //here in then()we give the values , with catch()we get the value.
