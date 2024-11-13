@@ -77,4 +77,9 @@ const promisefive = new Promise(function(resolve, reject){
 
         
 })
-promisefive.then()
+async function consumerpromisefive(){
+    //An async function always returns a Promise.
+    //Inside an async function, you can use the await keyword to wait for a Promise to resolve before proceeding to the next line of code.
+    //fetchData as async: By adding async before function, JavaScript knows that fetchData will contain asynchronous code.
+    
+}
