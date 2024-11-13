@@ -38,7 +38,7 @@ promisethree.then(function(user){//all the values are returned here and to retur
 
 const promisefour = new Promise(function(resolve, reject)  {
     setTimeout(function(){
-        let error=true
+        let error=false //or give the value as ""true""" to check the output
         //suppouse if we try to acess the file or networkrequest.
         if (!error) {
             resolve({username:"SMD",passowrd:"123"})
@@ -54,7 +54,8 @@ promisefour.then((user)=>{
     return user.username
     
 }).then(function(username){
-    console.log(username);
+    console.log(username);//to acess the username we nned undergo the first user varaible then undergo to 
+    // then this then() we get and return it 
     
 }).catch(function(error){
     console.log(error)
