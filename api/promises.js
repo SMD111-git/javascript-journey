@@ -61,4 +61,19 @@ promisefour.then((user)=>{
 }).catch(function(error){
     console.log(error) //here in then()we give the values , with catch()we get the value.
 
-}).finally(())//that the code inside finally will always execute, regardless of whether the Promise was successful or failed.
+}).finally(()=>{
+    console.log("the promise is reslove or rejected ")
+})//that the code inside finally will always execute, regardless of whether the Promise was successful or failed.
+const promisefive = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error=false 
+        if (!error) { 
+            resolve({username:"js",passowrd:"123"})
+        }
+        else{
+            reject('ERROR:something went wrong in js')
+        }
+    },1000)
+
+        
+})
