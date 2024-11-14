@@ -121,7 +121,7 @@ consumerpromisefive()
 getalluser()*/
 
 fetch('https://api.github.com/users/SMD111-git').then (function(respons){
-    return respons.json()
+    return respons.json()//the keyword respons fullfill the fetch
 }).then(function(data){
     console.log(data)
 }).catch((error) => console.log(error))
