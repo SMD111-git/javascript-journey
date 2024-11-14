@@ -47,7 +47,10 @@ promisethree.then(function(user){//all the values are returned here and to retur
 
 const promisefour = new Promise(function(resolve, reject)  {
     setTimeout(function(){
-        let error=false //or give the value as ""true""" to check the output
+        let error=false //A local variable error is defined as false.
+        //If error is false, the promise is resolved with an object containing a username and password.
+        //If error were true, the promise would be rejected with an error message.
+        //or give the value as ""true""" to check the output
         //suppouse if we try to acess the file or networkrequest.
         if (!error) { //!isLoggedIn means "not isLoggedIn." Since isLoggedIn is false, !isLoggedIn will be true, so the if block will execute, printing "User is not logged in."
             //If isLoggedIn were true, then !isLoggedIn would be false, and the else block would execute instead.
