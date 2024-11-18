@@ -112,7 +112,7 @@ consumerpromisefive()
     try{
     const response=await fetch("https://jsonplaceholder.typicode.com/users")
     const data =await response.json()
-    console.log(data)
+    console.log(data)//Using await pauses the execution of its surrounding async function until the promise is settled (that is, fulfilled or rejected).
 }catch(error){
     console.log("E:",error);
     
