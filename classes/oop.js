@@ -38,3 +38,15 @@ console.log(userone);
 //instances of a similar object type. Constructor functions are often written in a way that they are invoked using the new keyword, 
 //which ensures that a new object is created and the this keyword inside the constructor refers to that object
 //so  "new" keyword  gives a new instnances for every new varaible or object create.
+function use(username,logincount,isloged){
+    this.username=username;//the key point is that "this" is used as reffernces of varaible or create an empty object to store the value in it
+    //so this.username  act as variable
+    this.logincount=logincount;
+    this.isloged=isloged;
+
+
+}
+
+const useone= use("hitesh",12,true);
+const usetwo=use("smd",11,false)
+console.log(useone);
