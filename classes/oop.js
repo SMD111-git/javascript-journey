@@ -44,7 +44,10 @@ function use(username,logincount,isloged){
     //so this.username  act as variable
     this.logincount=logincount;
     this.isloged=isloged;
-
+    this.greeting=function(){
+        console.log(`welcome ${username}`);
+        
+    }
 
 }
 
