@@ -55,3 +55,5 @@ const useone=new use("hitesh",12,true);
 const usetwo=new use("smd",11,false)
 console.log(useone);
 console.log(usetwo);
+
+
