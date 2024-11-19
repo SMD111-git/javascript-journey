@@ -6,7 +6,8 @@ const user={
         console.log("got user details from database");
         //the keyword 'this ' refferes to the context to current  function or the class which need to  excuted
         console.log(`username:${this.username}`);
-        
+        console.log(this);//as we it the current context values or reffernces 
+                
     }
 }
 console.log(user.username);
