@@ -18,7 +18,7 @@ console.log(this);//this  excution in golbal reffernces as we get the output as 
 //const promiseone = new Promise() 
 /*constructor function  */
 //eg 
-/*function user(username,logincount,isloged){
+function user(username,logincount,isloged){
     this.username=username;//the key point is that "this" is used as reffernces of varaible or create an empty object to store the value in it
     //so this.username  act as variable
     this.logincount=logincount;
@@ -29,7 +29,7 @@ console.log(this);//this  excution in golbal reffernces as we get the output as 
 
 const userone= user("hitesh",12,true);
 const usertwo=user("smd",11,false)
-console.log(userone);*/
+console.log(userone);
 
 //as we see a varaible named userone is store init and the user function retirve it and ddipaly 
 //but as we give another varaible as usertwo thenn is  the output is  overwrited so to avoid this stuiation 
@@ -51,3 +51,4 @@ function use(username,logincount,isloged){
 const useone=new use("hitesh",12,true);
 const usetwo=new use("smd",11,false)
 console.log(useone);
+console.log(usetwo);
