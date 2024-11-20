@@ -35,3 +35,5 @@ const obj = {
     }
 };
 obj.greet();  // Outputs: Alice >>
+
+![alt text](image.png)
