@@ -126,3 +126,10 @@ fetch('https://api.github.com/users/SMD111-git').then (function(respons){
     console.log(data)
 }).catch((error) => console.log(error))
 
+
+
+
+
+/*for addtional info 
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data*/
+
