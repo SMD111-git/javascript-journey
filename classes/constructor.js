@@ -18,7 +18,7 @@ console.log(chai.changeusername());
 //console.log(chai.constructor()); this  cannot happen ?
 
 //behinnd the scene
-//if no class
+//if there no  use of class
 function user(username,email,password){
     this.username=username;
     this.password=password;
