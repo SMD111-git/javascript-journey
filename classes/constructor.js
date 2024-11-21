@@ -19,3 +19,19 @@ console.log(chai.changeusername());
 
 //behinnd the scene
 //if no class
+function user(username,email,password){
+    this.username=username;
+    this.password=password;
+    this.email=email;
+
+}
+user.prototype.encryptpassword=function(){
+    return `${this.password}abc`
+}
+user.prototype.changeusername=function(){
+    return `${this.username.toUpperCase()}`
+}
+const tea=new user ("tea","tea@gmail.com","123")
+console.log(tea.encryptpassword());
+console.log(tea.changeusername());
+
