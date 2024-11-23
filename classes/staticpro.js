@@ -11,14 +11,19 @@ class user{
 
     }
 }
-
-
-
-
-
-
-
-
+const smd=new user("smd")
+console.log(smd.createruser());//as the explaition is below it the other code we see thein detail thing  beloww
+//output :error
+//to acess this  static method or prop we can acess by the the extend or inhertinces it prop to other class
+class tearcher extends user{
+    constructor(username,email){
+        super(username)//to ?
+        this.email=email
+    }
+}
+const ip=new tearcher("ip")
+console.log(ip.createruser())
+console.log(ip.logme())//this  get the out put but above one does not to under below there is in deatil expalnation.
 
 /*In JavaScript, the `static` keyword is used to define static methods or properties in a **class**. It is important to note that `static` does **not** block or interrupt code execution. Instead, it is a way to define methods or properties that belong to the class itself, rather than instances of the class.
 
