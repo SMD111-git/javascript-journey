@@ -5,9 +5,9 @@ console.log(descripter);//here we can see the set of rules.
 
 
 //can we try to overwrite the values of inbuilt object example as above one 
-// console.log(Math.PI);
-// Math.PI = 5
-// console.log(Math.PI);
+ console.log(Math.PI);
+Math.PI = 5
+console.log(Math.PI);
 //we cannot change the values bcz ther already a set of  rule wirtten for this  inbulit object 
 //but we can set rule for your own object property created
 
