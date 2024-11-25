@@ -25,5 +25,31 @@
         }
     }
     const app= new react()
+    /*In JavaScript, the bind() method is used to create a new function that, when called, has its this keyword set to a specific value, and can optionally pre-set initial arguments.
+     Essentially, it "binds" a function to a particular object or context.
+     In JavaScript, the value of this can change depending on how a function is called. bind() ensures that the this keyword always refers to the same object, even if the function is passed around or used in different contexts.
+
+Example:
+javascript
+Copy code
+const person = {
+  name: 'John',
+  greet: function() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+};
+
+const anotherPerson = { name: 'Alice' };
+
+// Bind the greet function to person object
+const boundGreet = person.greet.bind(person);
+boundGreet();  // "Hello, my name is John"
+
+// Bind greet to anotherPerson
+const anotherBoundGreet = person.greet.bind(anotherPerson);
+anotherBoundGreet();  // "Hello, my name is Alice"
+In this example, the greet function would normally refer to the this context in
+which it is called. By using bind(), we explicitly set the this value to either person or anotherPerson.*/
  </script>
  </html>
+ 
