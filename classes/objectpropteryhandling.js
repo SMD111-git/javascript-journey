@@ -43,3 +43,4 @@ for (let [key, value] of Object.entries(chai)) {
         console.log(`${key} : ${value}`);
     }
 }//the point over here if a funnction is inside the object then the we must handel that so we use a if(condition) to handel
+//here we can change the values of objects by checking the the set rules.
