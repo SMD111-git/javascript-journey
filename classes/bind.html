@@ -13,6 +13,7 @@
         constructor() {
             this.username="react"
             this.server="http://localhost:3000"
+            //bind key word
 
             document.querySelector('button').addEventListener('click',this.handleclick.bind(this))//here there no overwritting is happing the olny reffernce of this is given to this with help of bind it give the acess to all objects. 
             //the bind is  used here bcz this  give the reffernce of this eventlister and the class to the handleclick function to give the desired output.
