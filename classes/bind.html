@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react</title>
+ </head>
+ <body>
+    <button>button clicked</button>
+ </body>
+ <script>
+    class react {
+        constructor() {
+            this.username="react"
+            this.server="http://localhost:3000"
+
+            document.querySelector('button').addEventListener('click',this.handleclick.bind(this))
+            //the bind is  used here bcz this  give the reffernce of this eventlister and the class to the handleclick function to give the desired output.
+            //if the code  structure was "document.querySelector('button').addEventListener('click',this.handleclick)" then the output might be undifined due to  there was no reffernces of keyword "this" to get the  output .
+        }
+        handleclick(){//this function is getting the reffernces of the above object and showing the output
+         console.log("button clicked");
+         console.log(this.server);
+         console.log(this.username);
+        }
+    }
+    const app= new react()
+ </script>
+ </html>
