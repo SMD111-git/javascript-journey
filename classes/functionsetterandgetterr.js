@@ -1,6 +1,6 @@
 function User(email, password){
     this._email = email;
-    this._password = password
+    this._password = password //this _ defins as a private variable which can be olny acessed within the object or class.
 
     Object.defineProperty(this, 'email', {//here it much similar to get and set and we are  defining the object proptery as we have seen in the
         //objectpropteryhandling.js file.

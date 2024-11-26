@@ -3,7 +3,7 @@ class user{
         this.email=email;
         this.password=password;
     }
-
+//this _ defins as a private variable which can be olny acessed within the object or class.
     get email(){//to write the proptery value of object must be same as in the object constructor
         return this._email.toUpperCase()
     }

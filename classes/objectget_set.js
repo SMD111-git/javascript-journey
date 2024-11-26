@@ -1,6 +1,6 @@
 const User = {
     _email: 'h@hc.com',
-    _password: "abc",
+    _password: "abc",//this _ defins as a private variable which can be olny acessed within the object or class.
 
 
     get email(){ //here the propetry can be similar name but in the retrun thee varaible must be synntaxliy correct.
