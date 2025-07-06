@@ -130,6 +130,62 @@ fetch('https://api.github.com/users/SMD111-git').then (function(respons){
 
 
 
+
+
+//✅ Original Promise (with .then() and .catch())
+
+const promisethree = new Promise(function(resolve, reject) {
+  setTimeout(() => {
+    const success = true; // simulate success or failure
+    if (success) {
+      resolve({ username: 'chai', email: 'chai@example.com' });
+    } else {
+      reject('Something went wrong');
+    }
+  }, 1000);
+});
+
+promisethree
+  .then(function(user) {
+    console.log('User data:', user);
+  })
+  .catch(function(error) {
+    console.log('Error:', error);
+  });
+//🔍 Explanation:
+//If success is true, it resolves with the user object.
+//If success is false, it triggers reject, and the .catch() handles the error.
+/*🔄 Using async/await
+You can handle the same logic with async/await syntax, which is often easier to read and write.
+*/
+const promisethree = new Promise(function(resolve, reject) {
+  setTimeout(() => {
+    const success = true;
+    if (success) {
+      resolve({ username: 'chai', email: 'chai@example.com' });
+    } else {
+      reject('Something went wrong');
+    }
+  }, 1000);
+});
+
+async function getUserData() {
+  try {
+    const user = await promisethree;
+    console.log('User data:', user);
+  } catch (error) {
+    console.log('Error:', error);
+  }
+}
+
+getUserData();
+/*🔍 Explanation:
+await promisethree waits for the Promise to resolve or reject.
+
+If it resolves, the user data is logged.
+
+If it rejects, the catch block handles the error.*/
+
 /*for addtional info 
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data*/
 
